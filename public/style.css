@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-size: 16px;
+    text-decoration: none; list-style: none; font-family: 'Poppins', sans-serif;
+}
+body{
+    background: var(--gray);
+}
+.Header{
+    width: 100%; height: 120px;
+    background: rgb(34,123,239);
+    background: linear-gradient(0deg, rgba(34,123,239,1), rgba(122,75,255,1) 100%);
+    margin-bottom: 30px; position: fixed; top: 0; z-index: 99;
+    border-radius: 0px 0px 25px 25px;
+    box-shadow: 0 5px 10px var(--black);
+}
+.Header__icons{
+    width: 100%; height: 30px;
+    padding: 15px; position: relative;
+    z-index: 9999;
+}
+.icon__Style{
+    font-size: 30px; color: var(--white);
+    position: absolute; right: 0; margin-right: 15px;
+}
+.Header__title{
+    color: var(--white);
+    text-align: center;
+}
+.Header__valueTitle{
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.Header__valueTotal{
+    font-size: 1.875rem;
+    font-weight: normal;
+}
+/*-------------------------*/
+.Container{
+    width: 100%; max-width: 600px;
+    margin: auto;
+}
+.Container__title{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+}
+.Container__item{
+    margin-bottom: 20px;
+}
+.Item:nth-child(1){
+    margin-top: 150px;
+}
+.Item{
+    width: 90%; height: 87px;
+    background: var(--white);
+    box-shadow: 0 5px 10px var(--black);
+    margin-bottom: 10px !important;
+    border-radius: 25px;
+    margin: auto;
+    position: relative;
+}
+.Item__style{
+    border-radius: 17px;
+    height: 65px; width: 60%;
+    border: none;
+    text-align: center;
+    font-size: 1.375rem;
+    box-shadow: 0 5px 10px var(--black);
+}
+.Item__styleTxt{
+    margin: 0px 3px 5px 20px;
+}
+.Item__price{
+    width: 145px; color: var(--main);
+    font-weight: 600;
+    padding-top: 10px;
+}
+.Item__value{
+    width: 75px; height: 47px; position: absolute;
+    right: 0; top: 0; margin-top: 20px; margin-right: 20px; 
+    background: var(--main);
+    border: none;
+    color: var(--white); text-align: center;
+}
+.Item__total{
+    width: 90%; font-size: 1.3125rem;
+    color: var(--txtGray);
+}
+input:focus{
+    outline: 2px solid var(--main);
+}
+::placeholder{
+    color: var(--white);
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none;
+}
+/*-----------------------*/
+.SectionValues{
+    margin-top: 40px;
+}
+.ItemCapsule__Style{
+    box-shadow: 0 5px 10px var(--black);
+}
+.ItemCapsule__subTitle{
+    text-align: center; padding: 10px;
+    font-weight: 600; font-size: 1.25rem;
+}
+.ItemCapsule__Input{
+    margin: auto; display: block;
+    width: 90%;
+}
+.ItemCapsule__money{
+    color: var(--white);
+    font-size: 1px;
+}
+.ItemCapsule:nth-child(3){
+    margin-bottom: 100px;
+}
+
+

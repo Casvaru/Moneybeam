@@ -1,7 +1,11 @@
 :root{
     --white:#ffffff;
-    --black:rgba(58, 58, 58, .2);
-    --main:#227BEF;
+    --black:#101010;
+    --main:#2D75F1;
     --gray:#f6f6f6;
+    --diff:#ff000027;
+    --clr-danger:#ff0000;
+
+    --shadowblack:rgba(58, 58, 58, .2);
     --txtGray:#3c3c3c;
 }

@@ -8,53 +8,66 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./var.css">
     <link rel="stylesheet" href="../src/icons/style.css">
-    
 </head>
 <body>
-        <main id="app">
+    <main id="app">
         <header class="Header">
             <div class="Header__icons">
-                <span id="reload" class="icon__Style icon-spinner11"></span>
+                <img class="Header__iconsRefresh" id="reload" src="../src/icons/refresh.svg" alt="refreshInput">
             </div>
             <div id="title" class="Header__valueTitle Header__title">Valor total</div>
             <div class="Header__valueTotal Header__title">$<span id="totalGlobal" class="Header__valueTotal Header__title">0</span></div>
         </header>
         <div class="Container">
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney100" class="Item__price">100000</span></div>
-                <input id="amountSection1" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection1" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney50" class="Item__price">50000</span></div>
-                <input id="amountSection2" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection2" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney20" class="Item__price">20000</span></div>
-                <input id="amountSection3" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection3" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney10" class="Item__price">10000</span></div>
-                <input id="amountSection4" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection4" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney5" class="Item__price">5000</span></div>
-                <input id="amountSection5" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection5" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney2" class="Item__price">2000</span></div>
-                <input id="amountSection6" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                <div class="Item__total Item__styleTxt">$ <span id="totalSection6" class="Item__total">0</span> </div>
-            </div>
-            <div class="Item">
-                <div class="Item__price Item__styleTxt">$<span id="valueMoney1" class="Item__price">1000</span></div>
-                <input id="amountSection7" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+            <label id="label" class="labelItem" for="amountSection1">
+                <div id="me" class="Item itemFirst">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney100" class="Item__price">100,000</span></div>
+                    <input id="amountSection1" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection1" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection2">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney50" class="Item__price">50,000</span></div>
+                    <input id="amountSection2" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection2" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection3">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney20" class="Item__price">20,000</span></div>
+                    <input id="amountSection3" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection3" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection4">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney10" class="Item__price">10,000</span></div>
+                    <input id="amountSection4" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection4" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection5">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney5" class="Item__price">5,000</span></div>
+                    <input id="amountSection5" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection5" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection6">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney2" class="Item__price">2,000</span></div>
+                    <input id="amountSection6" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    <div class="Item__total Item__styleTxt">$ <span id="totalSection6" class="Item__total">0</span> </div>
+                </div>
+            </label>
+            <label class="labelItem" for="amountSection7">
+                <div class="Item">
+                    <div class="Item__price Item__styleTxt">$<span id="valueMoney1" class="Item__price">1,000</span></div>
+                    <input id="amountSection7" class="Item__value Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
                 <div class="Item__total Item__styleTxt">$ <span id="totalSection7" class="Item__total">0</span> </div>
             </div>
+        </label>
             <section class="SectionValues">
                 <hr class="Separator">
                 <div class="ItemCapsule">
@@ -67,9 +80,20 @@
                         <input id="amountCapsule2" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
                         <span id="awards" class="ItemCapsule__money">0</span>
                 </div>
+                <div class="ItemCapsule">
+                    <div class="ItemCapsule__subTitle">En caja</div>
+                        <input id="amountCapsule3" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
+                        <span id="box" class="ItemCapsule__money">0</span>
+                </div>
+                <div class="ItemCapsule">
+                    <div class="ItemCapsule__subTitle">Diferencia</div>
+                        <input id="amountCapsule4" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
+                        <span id="diff" class="ItemCapsule__money"></span>
+                </div>
             </section>
         </div>
     </main>
 </body>
+<script src="../src/tools.js"></script>
     <script src="../src/logic.js"></script>
 </html>

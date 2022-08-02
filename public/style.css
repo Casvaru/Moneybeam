@@ -12,12 +12,14 @@ body{
     background: linear-gradient(0deg, rgba(34,123,239,1), rgba(122,75,255,1) 100%);
     margin-bottom: 30px; position: fixed; top: 0; z-index: 99;
     border-radius: 0px 0px 25px 25px;
-    box-shadow: 0 5px 10px var(--black);
+    box-shadow: 0 5px 10px var(--shadowblack);
 }
 .Header__icons{
     width: 100%; height: 30px;
-    padding: 15px; position: relative;
-    z-index: 9999;
+    padding: 15px;
+}
+.Header__iconsRefresh{
+    height: 35px; width: auto; margin-left: 89%;
 }
 .icon__Style{
     font-size: 30px; color: var(--white);
@@ -37,6 +39,9 @@ body{
     font-weight: normal;
 }
 /*-------------------------*/
+input:focus ~ #amountSection2{
+    background: red;
+}
 .Container{
     width: 100%; max-width: 600px;
     margin: auto;
@@ -49,56 +54,58 @@ body{
 .Container__item{
     margin-bottom: 20px;
 }
-.Item:nth-child(1){
+.itemFirst:nth-child(1){
     margin-top: 150px;
 }
 .Item{
     width: 90%; height: 87px;
     background: var(--white);
-    box-shadow: 0 5px 10px var(--black);
+    box-shadow: 0 5px 10px var(--shadowblack);
     margin-bottom: 10px !important;
     border-radius: 25px;
     margin: auto;
     position: relative;
 }
 .Item__style{
-    border-radius: 17px;
+    border-radius: 10px;
     height: 65px; width: 60%;
     border: none;
     text-align: center;
     font-size: 1.375rem;
-    box-shadow: 0 5px 10px var(--black);
+    box-shadow: 0 5px 10px var(--shadowblack);
 }
 .Item__styleTxt{
     margin: 0px 3px 5px 20px;
 }
 .Item__price{
     width: 145px; color: var(--main);
-    font-weight: 600;
+    font-weight: 800;
     padding-top: 10px;
 }
 .Item__value{
     width: 75px; height: 47px; position: absolute;
     right: 0; top: 0; margin-top: 20px; margin-right: 20px; 
-    background: var(--main);
-    border: none;
-    color: var(--white); text-align: center;
+    color: var(--black); text-align: center;
+    text-decoration: underline;
 }
 .Item__total{
     width: 90%; font-size: 1.3125rem;
     color: var(--txtGray);
 }
 input:focus{
-    outline: 2px solid var(--main);
+    outline: 3px solid var(--main);
 }
 ::placeholder{
-    color: var(--white);
+    color: var(--black);
   }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
   -webkit-appearance: none;
 }
 /*-----------------------*/
+.Separator{
+    width: 80%; margin: auto;
+}
 .SectionValues{
     margin-top: 40px;
 }
@@ -114,11 +121,17 @@ input[type=number]::-webkit-outer-spin-button {
     width: 90%;
 }
 .ItemCapsule__money{
-    color: var(--white);
+    color: var(--gray);
     font-size: 1px;
 }
-.ItemCapsule:nth-child(3){
+.ItemCapsule:nth-child(5){
     margin-bottom: 100px;
+}
+#amountCapsule4{
+    background: var(--diff);
+}
+#amountCapsule4:focus{
+    outline: 3px solid var(--clr-danger);
 }
 
 

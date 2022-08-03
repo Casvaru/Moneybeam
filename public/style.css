@@ -73,6 +73,7 @@ input:focus ~ #amountSection2{
     text-align: center;
     font-size: 1.375rem;
     box-shadow: 0 5px 10px var(--shadowblack);
+    background: var(--white);
 }
 .Item__styleTxt{
     margin: 0px 3px 5px 20px;
@@ -105,33 +106,54 @@ input[type=number]::-webkit-outer-spin-button {
 /*-----------------------*/
 .Separator{
     width: 80%; margin: auto;
+    padding: 10px 0px;
 }
 .SectionValues{
     margin-top: 40px;
 }
+.ItemCapsule{
+    position: relative;
+    margin: 20px 0px;
+}
+.ItemCapsule__Text{
+    display: block;
+    width: 90%;
+    margin: auto;
+    line-height: 70px;
+    position: relative;
+    z-index: 20;
+}
 .ItemCapsule__Style{
     box-shadow: 0 5px 10px var(--black);
+}
+.ItemCapsule__resetInput{
+    width: 25px; height: 25px;
+    background: var(--shadowblack);
+    border-radius: 50%;
+    position: absolute;
+    right: 0; margin-right: 40px;
+    margin-top: 20px;
+    text-align: center; font-weight: 600;
+    color: var(--txtClose); line-height: 25px;
+    z-index: 30;
 }
 .ItemCapsule__subTitle{
     text-align: center; padding: 10px;
     font-weight: 600; font-size: 1.25rem;
 }
 .ItemCapsule__Input{
-    margin: auto; display: block;
     width: 90%;
+    position: absolute; top: 0;
+    margin-top: 50px; margin-left: 5%;
 }
 .ItemCapsule__money{
     color: var(--gray);
     font-size: 1px;
 }
-.ItemCapsule:nth-child(5){
-    margin-bottom: 100px;
-}
-#amountCapsule4{
+#totalDiff{
     background: var(--diff);
+    margin-bottom: 100px;
 }
 #amountCapsule4:focus{
     outline: 3px solid var(--clr-danger);
 }
-
-

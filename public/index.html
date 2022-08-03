@@ -69,31 +69,45 @@
             </div>
         </label>
             <section class="SectionValues">
-                <hr class="Separator">
-                <div class="ItemCapsule">
-                    <div class="ItemCapsule__subTitle">Moneda</div>
+                <div class="Separator">
+                    <hr>
+                </div>
+                <label for="amountCapsule1">
+                    <div class="ItemCapsule">
+                        <div class="ItemCapsule__subTitle">Moneda</div>
+                        <div id="reset1" class="ItemCapsule__resetInput">X</div>
+                        <span id="totalMoney" class="ItemCapsule__Text Item__style">0</span>
                         <input id="amountCapsule1" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
-                        <span id="money" class="ItemCapsule__money">0</span>
-                </div>
-                <div class="ItemCapsule">
-                    <div class="ItemCapsule__subTitle">Premios</div>
-                        <input id="amountCapsule2" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
-                        <span id="awards" class="ItemCapsule__money">0</span>
-                </div>
-                <div class="ItemCapsule">
-                    <div class="ItemCapsule__subTitle">En caja</div>
-                        <input id="amountCapsule3" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
-                        <span id="box" class="ItemCapsule__money">0</span>
-                </div>
-                <div class="ItemCapsule">
-                    <div class="ItemCapsule__subTitle">Diferencia</div>
-                        <input id="amountCapsule4" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder= "0" onkeyup="count()">
-                        <span id="diff" class="ItemCapsule__money"></span>
-                </div>
+                    </div>
+                </label>
+                <label for="amountCapsule2">
+                    <div class="ItemCapsule">
+                        <div class="ItemCapsule__subTitle">Premios</div>
+                        <div id="reset2" class="ItemCapsule__resetInput">X</div>
+                        <span id="totalAwards" class="ItemCapsule__Text Item__style">0</span>
+                        <input id="amountCapsule2" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    </div>
+                </label>
+                <label for="amountCapsule3">
+                    <div class="ItemCapsule">
+                        <div class="ItemCapsule__subTitle">Efectivo en caja</div>
+                        <div id="reset3" class="ItemCapsule__resetInput">X</div>
+                        <span id="totalBox" class="ItemCapsule__Text Item__style">0</span>
+                        <input id="amountCapsule3" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    </div>
+                </label>
+                <label for="amountCapsule4">
+                    <div class="ItemCapsule">
+                        <div class="ItemCapsule__subTitle">Saldo a liquidar</div>
+                        <div id="reset4" class="ItemCapsule__resetInput">X</div>
+                        <span id="totalDiff" class="ItemCapsule__Text Item__style">0</span>
+                        <input id="amountCapsule4" class="ItemCapsule__Input Item__style" type="number" pattern="[0-9]*" name="cont" placeholder="0" onkeyup="count()">
+                    </div>
+                </label>
             </section>
         </div>
     </main>
 </body>
-<script src="../src/tools.js"></script>
+<script src="../src/reset.js"></script>
     <script src="../src/logic.js"></script>
 </html>

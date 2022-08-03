@@ -4,6 +4,8 @@ function formatear(dato) {
       });
   }
 function count(){
+    let totalGlobal = document.getElementById("totalGlobal")
+
     let money100 = parseInt(document.getElementById("valueMoney100").innerHTML)
     let totalSection1 = document.getElementById("totalSection1")
     let amountSection1 = document.getElementById("amountSection1").value
@@ -32,69 +34,46 @@ function count(){
     let totalSection7 = document.getElementById("totalSection7")
     let amountSection7 = document.getElementById("amountSection7").value
 
-
     let getMoney = document.getElementById("amountCapsule1").value
-    let money = document.getElementById("money")
-
-    let totalMoney = parseInt(getMoney * 1)
-    money.innerHTML = totalMoney
+    let money = document.getElementById("totalMoney")
+    let totalMoney = parseInt(getMoney * 1)     
 
     let getAwards = document.getElementById("amountCapsule2").value
-    let awards = document.getElementById("awards")
-
+    let awards = document.getElementById("totalAwards")
     let totalAwards = parseInt(getAwards * 1)
-    awards.innerHTML = totalAwards
 
     let getBox = document.getElementById("amountCapsule3").value
-    let box = document.getElementById("box")
-
+    let box = document.getElementById("totalBox")
     let totalBox = parseInt(getBox * 1)
-    box.innerHTML = totalBox
 
     let getDiff = document.getElementById("amountCapsule4").value
-    let diff = document.getElementById("diff")
-
+    let diff = document.getElementById("totalDiff")
     let totalDiff = parseInt(getDiff * 1)
-    diff.innerHTML = formatear(totalDiff.toFixed(0))
-
-    let totalGlobal = document.getElementById("totalGlobal")
     
-    let totalAmountSection1 = parseInt((money100*1000) * amountSection1)
-    let totalAmountSection2 = parseInt((money50*1000) * amountSection2)
-    let totalAmountSection3 = parseInt((money20*1000) * amountSection3)
-    let totalAmountSection4 = parseInt((money10*1000) * amountSection4)
-    let totalAmountSection5 = parseInt((money5*1000) * amountSection5)
-    let totalAmountSection6 = parseInt((money2*1000) * amountSection6)
-    let totalAmountSection7 = parseInt((money1*1000) * amountSection7)
+    let Value1 = parseInt((money100*1000) * amountSection1)
+    let Value2 = parseInt((money50*1000) * amountSection2)
+    let Value3 = parseInt((money20*1000) * amountSection3)
+    let Value4 = parseInt((money10*1000) * amountSection4)
+    let Value5 = parseInt((money5*1000) * amountSection5)
+    let Value6 = parseInt((money2*1000) * amountSection6)
+    let Value7 = parseInt((money1*1000) * amountSection7)
     
-    formatear(totalAmountSection1.toFixed(0))
-    formatear(totalAmountSection2.toFixed(0))
-    formatear(totalAmountSection3.toFixed(0))
-    formatear(totalAmountSection4.toFixed(0))
-    formatear(totalAmountSection5.toFixed(0))
-    formatear(totalAmountSection6.toFixed(0))
-    formatear(totalAmountSection7.toFixed(0))
-
-    
-    Value1 = parseInt(totalAmountSection1)
-    Value2 = parseInt(totalAmountSection2)
-    Value3 = parseInt(totalAmountSection3)
-    Value4 = parseInt(totalAmountSection4)
-    Value5 = parseInt(totalAmountSection5)
-    Value6 = parseInt(totalAmountSection6)
-    Value7 = parseInt(totalAmountSection7)
-    
-    totalSection1.innerHTML = formatear(totalAmountSection1.toFixed(0))
-    totalSection2.innerHTML = formatear(totalAmountSection2.toFixed(0))
-    totalSection3.innerHTML = formatear(totalAmountSection3.toFixed(0))
-    totalSection4.innerHTML = formatear(totalAmountSection4.toFixed(0))
-    totalSection5.innerHTML = formatear(totalAmountSection5.toFixed(0))
-    totalSection6.innerHTML = formatear(totalAmountSection6.toFixed(0))
-    totalSection7.innerHTML = formatear(totalAmountSection7.toFixed(0))
+    totalSection1.innerHTML = formatear(Value1.toFixed(0))
+    totalSection2.innerHTML = formatear(Value2.toFixed(0))
+    totalSection3.innerHTML = formatear(Value3.toFixed(0))
+    totalSection4.innerHTML = formatear(Value4.toFixed(0))
+    totalSection5.innerHTML = formatear(Value5.toFixed(0))
+    totalSection6.innerHTML = formatear(Value6.toFixed(0))
+    totalSection7.innerHTML = formatear(Value7.toFixed(0))
+    moneyFormat = formatear(totalMoney.toFixed(0))
+    money.innerHTML = moneyFormat
+    awardsFormat = formatear(totalAwards.toFixed(0))
+    awards.innerHTML = awardsFormat
+    boxFormat = formatear(totalBox.toFixed(0))
+    box.innerHTML = boxFormat
+    diffFormat = formatear(totalDiff.toFixed(0))
+    diff.innerHTML = diffFormat
     
     totalGlobalValue = Intl.NumberFormat('en-US').format((Value1 + Value2 + Value3 + Value4 + Value5 + Value6 + Value7 + totalAwards + totalMoney + totalBox) - totalDiff)
     totalGlobal.innerHTML = totalGlobalValue
 }
-
-let reloadPage = document.getElementById("reload")
-    reloadPage.addEventListener("click", () => {location.reload()})

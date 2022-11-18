@@ -1,0 +1,19 @@
+:root{
+    --white:#ffffff;
+    --black:#101010;
+    --main:#2D75F1;
+    --main2:#7a4bff;
+    --gray:#f6f6f6;
+    --diff:#ffd3d3;
+    --clr-danger:#ff0000;
+    --bgDark:#171717;
+    --switchDark:#fdd939;
+    --itemDark:#0f0f0f;
+    --txtGrayDark:#efefef;
+    --diffDark:#651e1e;
+
+    --shadowblack:rgba(58, 58, 58, .2);
+    --shadowDark:rgba(120, 120, 120, 0.2);
+    --txtGray:#3c3c3c;
+    --txtClose:#6e6e6e;
+}
